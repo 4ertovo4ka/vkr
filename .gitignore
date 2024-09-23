@@ -235,3 +235,4 @@ $RECYCLE.BIN/
 /sql_data
 /backend/test.py
 /server.conf
+/backend/webapp/config.py
