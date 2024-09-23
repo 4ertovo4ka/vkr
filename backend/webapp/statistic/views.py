@@ -3,7 +3,7 @@
 # Created at: Thursday, November 14th 2019, 13:36:12 +03:00
 # Author: Tamara A. Repina (4ertovo4ka@gmail.com)
 # -----
-# Last Modified: Friday, September 20th 2024, 11:35:59 +03:00
+# Last Modified: Monday, September 23rd 2024, 19:06:22 +03:00
 # Modified By: Tamara A. Repina (4ertovo4ka@gmail.com>)
 # Last version: <<projectversion>>
 # -----
@@ -33,10 +33,10 @@ def statistic():
     # words_stat = get_words_stat()
 
     vacancies_path = os.path.abspath(
-        'backend/data/statistic/vacancies_stat.json')
+        'data/statistic/vacancies_stat.json')
 
     words_path = os.path.abspath(
-        'backend/data/statistic/words_stat.json')
+        'data/statistic/words_stat.json')
 
     with open(vacancies_path, mode='r', encoding='utf8') as vs:
         vacstat = json.load(vs)
