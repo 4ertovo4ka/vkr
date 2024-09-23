@@ -1,3 +1,16 @@
+# Project: vacancy
+# File: \models.py
+# Created at: Thursday, November 14th 2019, 13:36:12 +03:00
+# Author: Tamara A. Repina (4ertovo4ka@gmail.com)
+# -----
+# Last Modified: Monday, September 23rd 2024, 21:43:45 +03:00
+# Modified By: Tamara A. Repina (4ertovo4ka@gmail.com>)
+# Last version: <<projectversion>>
+# -----
+# Copyright 2024 Tamara A. Repina
+# License: GNU Affero General Public License v3.0 https://www.gnu.org/licenses/agpl.txt
+
+
 from sqlalchemy.sql import func
 
 from webapp.user.models import assoc_area_user, assoc_skill_user
@@ -53,8 +66,10 @@ class Skill(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
     count = db.Column(db.Integer, nullable=True)
-    category = db.relationship('Category', secondary=assoc_skill_category, backref=db.backref('catskill', lazy='dynamic'))
-    skill = db.relationship('User', secondary=assoc_skill_user, backref=db.backref('user_skill', lazy='dynamic'))
+    category = db.relationship('Category', secondary=assoc_skill_category,
+                               backref=db.backref('catskill', lazy='dynamic'))
+    users = db.relationship(
+        'User', secondary=assoc_skill_user, back_populates='skills')
 
 
 class ProfessionalArea(db.Model):
@@ -68,8 +83,8 @@ class ProfessionalArea(db.Model):
 
     prof_grades = db.relationship(
         'VacancyGrade', backref='prof_grades', lazy=True)
-    area = db.relationship('User', secondary=assoc_area_user,
-                           backref=db.backref('user_area', lazy='dynamic'))
+    users = db.relationship(
+        'User', secondary=assoc_area_user, back_populates='areas')
 
 
 class VacancyGrade(db.Model):

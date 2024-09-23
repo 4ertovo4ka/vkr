@@ -3,7 +3,7 @@
 # Created at: Thursday, November 14th 2019, 13:36:12 +03:00
 # Author: Tamara A. Repina (4ertovo4ka@gmail.com)
 # -----
-# Last Modified: Friday, September 20th 2024, 01:47:30 +03:00
+# Last Modified: Monday, September 23rd 2024, 21:41:27 +03:00
 # Modified By: Tamara A. Repina (4ertovo4ka@gmail.com>)
 # Last version: <<projectversion>>
 # -----
@@ -39,10 +39,11 @@ class User(db.Model, UserMixin):
     last_name = db.Column(db.String(80), nullable=True,
                           server_default='Фамилия')
     city = db.Column(db.String(80), nullable=True, server_default='Город')
-    user = db.relationship('Skill', secondary=assoc_skill_user,
-                           backref=db.backref('user', lazy='dynamic'))
-    user_1 = db.relationship('ProfessionalArea', secondary=assoc_area_user,
-                             backref=db.backref('user', lazy='dynamic'))
+
+    skills = db.relationship(
+        'Skill', secondary=assoc_skill_user, back_populates='users')
+    areas = db.relationship(
+        'ProfessionalArea', secondary=assoc_area_user, back_populates='users')
     favourites = db.relationship('Favourite', backref='user_favourite')
 
     def set_password(self, password):
