@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+email-validator = "*"
+flask-login = "*"
+flask-migrate = "*"
+flask-sqlalchemy = "*"
+nltk = "*"
+numpy = "*"
+pandas = "*"
+pymysql = "*"
+psycopg = {extras = ["binary"], version = "*"}
+pydantic-settings = "*"
+pip = "*"
+flask-wtf = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

@@ -1,0 +1,25 @@
+[
+  {"1 Базы данных  NoSQL": ["redis", "mongodb", "cassandra", "hbase", "influxdb"]},
+
+  {"2 Базы данных SQL":  ["mysql", "postgre", "sqlite", "mariadb", "oracle", "clickhouse"]},
+
+  {"3 Язык программирования":  ["python", "java", "javascript",  "typescript",  "php",  "ruby", "r",  "c", "c++", "c#",
+    "assembler", "golang", "swift", "kotlin"]},
+
+  {"6 Фреймворки": ["django", "flask", "tornado", "pytest", "unittest", "pyramid", "spring", "vue", "node.js", "kohana",
+    "laravel", "zend", "aiohttp", "scikit-learn", "spark", "numpy", "pandas", "scipy", "matplotlib", "tensorflow",
+    "pytorch", "scrapy", "beautifulsoup", "extjs", "bootstrap", "react", "selenium", "yii"]},
+
+  {"7 Инструменты": ["nginx",  "memcached", "tomcat", "apache", "haproxy", "rabbitmq", "activemq", "celery", "kafka",
+    "elasticsearch", "kibana", "jmeter", "html", "css", "jquery", "ajax", "amp", "ec2", "redux", "fabric", "jupyter",
+    "matlab", "keras", "tableau"]},
+
+  {"8 Автоматизация": ["ansible", "docker", "chef", "hadoop", "zookeeper", "consul", "zabbix", "puppet", "jenkins",
+    "kubernetes", "bamboo", "teamcity", "saltstack", "grafana", "prometheus", "postfix", "garden", "maven"]},
+
+  {"5 Тестирование API":  ["soapui", "zeep", "postman", "odata", "awx", "graphql", "jmeter", "drf"]},
+
+  {"4 Системы контроля версий": ["github", "gitlab", "bitbucket", "mercurial", "svn"]},
+
+  {"9 ORM": ["sqlalchemy", "mongoengine", "hibernate"]}
+]
