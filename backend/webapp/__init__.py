@@ -3,12 +3,11 @@
 # Created at: Thursday, November 14th 2019, 13:36:12 +03:00
 # Author: Tamara A. Repina (4ertovo4ka@gmail.com)
 # -----
-# Last Modified: Sunday, September 22nd 2024, 14:42:00 +03:00
+# Last Modified: Monday, September 23rd 2024, 18:51:08 +03:00
 # Modified By: Tamara A. Repina (4ertovo4ka@gmail.com>)
 # Last version: <<projectversion>>
 # -----
 # Copyright 2024 Tamara A. Repina
-# License: GNU Affero General Public License v3.0 https://www.gnu.org/licenses/agpl.txt
 
 
 from flask import Flask
